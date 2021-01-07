@@ -3,3 +3,9 @@ provider "aws" {
 }
 
 #Create an EC2 Resource Block
+
+resource "aws_instance" "example" {
+    ami = "0be2609ba883822ec"
+    instance_type = "t2.micro"
+} 
+
